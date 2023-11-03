@@ -35,8 +35,8 @@ function IPost(){
     return(
         <div>
             <PostContainer>
-                {posts.map(({id, picture, title, description}) => (
-                    <PostItem key={id} picture={picture} title={title} description={description} onClick={() => deletePost(id)}/>
+                {posts.map(({id, picture, title, body}) => (
+                    <PostItem key={id} picture={picture} title={title} description={body} onClick={() => deletePost(id)}/>
                 ))}
             </PostContainer>
             <FieldContainer>
